@@ -16,7 +16,7 @@ L=(x**2+y**2-2*sigma**2)/(2*np.pi*sigma**6)*np.exp(-(x**2+y**2)/(2*sigma**2))
 #plt.figure()
 plt.imshow(L, cmap='gray')
 plt.colorbar()
-#plt.show()
+plt.show()
 
 from matplotlib import cm
 
@@ -68,7 +68,7 @@ for k in range(len(gauss_pyramid)):
     plt.title(f'Level {k}')
 plt.suptitle('Gaussian Pyramid')
 plt.tight_layout()
-#plt.show()
+plt.show()
 
 
 
@@ -90,7 +90,7 @@ for k in range(5):  # show first 5 levels
 
 plt.suptitle('Laplacian Pyramid')
 plt.tight_layout()
-#plt.show()
+plt.show()
 
 
 diff_pyramid=[]
