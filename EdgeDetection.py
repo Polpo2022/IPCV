@@ -62,9 +62,9 @@ plt.show()
 
 IMG2=Img_gray.copy()
 
-sigma =5
-size = 35
-tL = 0.05
+sigma =3
+size = 33
+tL = 0.00005
 L = my_laplacian(sigma, size)
 I_lap=convolve2d(IMG2,L,mode='same',boundary='symm')
 zero_cross = (I_lap * ndimage.shift(I_lap, (0,1)) < 0)  # Zero crossing
